@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MavenPro-Regular.ttf">
+            <string>MavenProRegular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SessionInfoView" customModule="cueBoom" customModuleProvider="target">
+            <connections>
+                <outlet property="arrowImgV" destination="A2W-dS-Mtj" id="1I1-uZ-7b8"/>
+                <outlet property="bottomBorder" destination="qTe-bu-UNF" id="1TK-kS-d5Y"/>
+                <outlet property="cartView" destination="JWa-xu-3C6" id="9U0-y8-CbK"/>
+                <outlet property="djNameLbl" destination="ES2-uq-uhd" id="GJm-jG-jz7"/>
+                <outlet property="numCartItemsLbl" destination="4oF-S0-72z" id="oY6-Yb-cfe"/>
+                <outlet property="topBorder" destination="gva-5i-e4q" id="0g2-S7-lko"/>
+                <outlet property="venueInfoLbl" destination="UQP-3c-ruf" id="IEA-TV-6pG"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Xje-We-AM2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="JWa-xu-3C6">
+                    <rect key="frame" x="0.0" y="2" width="400" height="68"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart" translatesAutoresizingMaskIntoConstraints="NO" id="SXG-0I-tdV">
+                            <rect key="frame" x="362" y="20" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="0LX-gM-8OP"/>
+                                <constraint firstAttribute="width" constant="28" id="gqF-zE-njF"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.84999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="4oF-S0-72z">
+                            <rect key="frame" x="309" y="23.5" width="43" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="af0-CN-e5p"/>
+                                <constraint firstAttribute="width" constant="43" id="jdh-2H-fUU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MavenProRegular" family="Maven Pro" pointSize="25"/>
+                            <color key="textColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="SXG-0I-tdV" firstAttribute="leading" secondItem="4oF-S0-72z" secondAttribute="trailing" constant="10" id="Obb-ef-XqU"/>
+                        <constraint firstItem="SXG-0I-tdV" firstAttribute="centerY" secondItem="JWa-xu-3C6" secondAttribute="centerY" id="ZOS-qD-AfS"/>
+                        <constraint firstItem="4oF-S0-72z" firstAttribute="centerY" secondItem="JWa-xu-3C6" secondAttribute="centerY" id="mFT-tM-bQd"/>
+                        <constraint firstAttribute="trailing" secondItem="SXG-0I-tdV" secondAttribute="trailing" constant="10" id="swY-QB-WLa"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="hNx-Px-E1O" appends="YES" id="nUC-fW-B2B"/>
+                    </connections>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to select venue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ES2-uq-uhd">
+                    <rect key="frame" x="20" y="5" width="155" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="XsA-W2-iv2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MavenProRegular" family="Maven Pro" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gva-5i-e4q">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="2"/>
+                    <color key="backgroundColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="QU7-qk-2Sb"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTe-bu-UNF" userLabel="Bottom Border">
+                    <rect key="frame" x="0.0" y="69" width="400" height="1"/>
+                    <color key="backgroundColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="lrx-00-D4Q"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="A2W-dS-Mtj">
+                    <rect key="frame" x="185" y="22" width="30" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="ooF-xj-f5J"/>
+                        <constraint firstAttribute="height" constant="15" id="pxd-uF-4wW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venue info" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UQP-3c-ruf">
+                    <rect key="frame" x="20" y="36" width="155" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="onL-8p-5du"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MavenProRegular" family="Maven Pro" pointSize="10.5"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="UQP-3c-ruf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="17k-HE-Nya"/>
+                <constraint firstAttribute="trailing" secondItem="JWa-xu-3C6" secondAttribute="trailing" id="1Df-gF-H5d"/>
+                <constraint firstItem="qTe-bu-UNF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="C3N-Xp-cw0"/>
+                <constraint firstItem="JWa-xu-3C6" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="DrY-uT-byS"/>
+                <constraint firstAttribute="trailing" secondItem="qTe-bu-UNF" secondAttribute="trailing" id="I3C-Wb-vNI"/>
+                <constraint firstItem="A2W-dS-Mtj" firstAttribute="leading" secondItem="UQP-3c-ruf" secondAttribute="trailing" constant="10" id="Joz-QC-76Z"/>
+                <constraint firstItem="JWa-xu-3C6" firstAttribute="leading" secondItem="qTe-bu-UNF" secondAttribute="leading" id="NVd-lV-fw7"/>
+                <constraint firstItem="JWa-xu-3C6" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="NiZ-HR-gaY"/>
+                <constraint firstItem="gva-5i-e4q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Vpo-81-GwD"/>
+                <constraint firstItem="UQP-3c-ruf" firstAttribute="top" secondItem="ES2-uq-uhd" secondAttribute="bottom" id="W5Q-rt-gDb"/>
+                <constraint firstItem="JWa-xu-3C6" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="XFe-OI-rj5"/>
+                <constraint firstItem="A2W-dS-Mtj" firstAttribute="leading" secondItem="ES2-uq-uhd" secondAttribute="trailing" constant="10" id="aeY-kI-nzH"/>
+                <constraint firstItem="A2W-dS-Mtj" firstAttribute="top" secondItem="gva-5i-e4q" secondAttribute="bottom" constant="20" id="akQ-5A-6fN"/>
+                <constraint firstItem="gva-5i-e4q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bI2-aF-Rpc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gva-5i-e4q" secondAttribute="trailing" id="fCV-nx-Pg3"/>
+                <constraint firstItem="A2W-dS-Mtj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gF9-C4-ehx"/>
+                <constraint firstItem="qTe-bu-UNF" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="j3D-Bf-cjQ"/>
+                <constraint firstItem="ES2-uq-uhd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="lGb-Dj-Q8f"/>
+                <constraint firstItem="ES2-uq-uhd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="og3-Tt-ofr"/>
+                <constraint firstItem="JWa-xu-3C6" firstAttribute="top" secondItem="gva-5i-e4q" secondAttribute="bottom" id="q7q-ai-4E2"/>
+                <constraint firstItem="JWa-xu-3C6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="2" id="ygp-W0-g0B"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="9DD-QR-zep" appends="YES" id="yHK-u7-mfj"/>
+            </connections>
+            <point key="canvasLocation" x="424.80000000000001" y="-461.46926536731638"/>
+        </view>
+        <tapGestureRecognizer id="9DD-QR-zep" userLabel="viewTapped">
+            <connections>
+                <action selector="viewTapped:" destination="-1" id="2Yf-HW-RpF"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="hNx-Px-E1O" userLabel="cartTapped">
+            <connections>
+                <action selector="cartViewTapped:" destination="-1" id="TGO-27-Aff"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="cart" width="33.5" height="33.5"/>
+        <image name="downArrow" width="28.5" height="17"/>
+    </resources>
+</document>

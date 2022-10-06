@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MavenPro-Regular.ttf">
+            <string>MavenProRegular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeBg" translatesAutoresizingMaskIntoConstraints="NO" id="3HZ-yR-i8Z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cueBoom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZI-li-KzA">
+                                <rect key="frame" x="16" y="256" width="382" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="ZzA-8s-fH0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MavenProRegular" family="Maven Pro" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU'RE IN THE QUEUE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLs-AM-eV1">
+                                <rect key="frame" x="16" y="333" width="382" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PBa-4M-XHd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MavenProRegular" family="Maven Pro" pointSize="21"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QLs-AM-eV1" firstAttribute="top" secondItem="ZZI-li-KzA" secondAttribute="bottom" id="1cE-vt-D3O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZZI-li-KzA" secondAttribute="trailing" constant="16" id="7iI-eM-876"/>
+                            <constraint firstItem="QLs-AM-eV1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8R5-I4-rxY"/>
+                            <constraint firstItem="3HZ-yR-i8Z" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ARE-78-Q3W"/>
+                            <constraint firstItem="3HZ-yR-i8Z" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JkU-Ez-eTo"/>
+                            <constraint firstItem="3HZ-yR-i8Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PAP-Ed-EhP"/>
+                            <constraint firstItem="ZZI-li-KzA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="e36-Os-S1r"/>
+                            <constraint firstAttribute="bottom" secondItem="3HZ-yR-i8Z" secondAttribute="bottom" id="sRt-6W-iX3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QLs-AM-eV1" secondAttribute="trailing" constant="16" id="uny-Jf-rKZ"/>
+                            <constraint firstItem="ZZI-li-KzA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="212" id="v10-JS-hBy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="374.33035714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homeBg" width="750" height="1334"/>
+    </resources>
+</document>

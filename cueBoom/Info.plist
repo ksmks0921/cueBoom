@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>cueBoom</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.583759966170-2qnn1aki14b22t4pfr4laj3d4agtk05s</string>
+				<string>com.googleusercontent.apps.583759966170-nsujf1o1v645nuf8h0f63q1tolb50690</string>
+				<string>fb646435683487836</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>FacebookAppID</key>
+	<string>646435683487836</string>
+	<key>FacebookDisplayName</key>
+	<string>cueBoom</string>
+    <key>FacebookClientToken</key>
+    <string>a7f180cf0633eb271e4c45cff7ae8214</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Cueboom allows you to upload images from your camera.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>We use this to provide frictionless reauthentication on the same device.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>cueBoom uses your location to find active venues near you</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Cueboom allows you to upload images from your library.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Roboto-Light.ttf</string>
+		<string>MavenPro-Regular.ttf</string>
+		<string>MavenPro-Bold.ttf</string>
+		<string>MavenPro-Medium.ttf</string>
+		<string>RobotoCondensed-Light.ttf</string>
+		<string>MavenPro-Black.ttf</string>
+		<string>Roboto-Regular.ttf</string>
+		<string>Roboto-LightItalic.ttf</string>
+		<string>Roboto-Medium.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Login</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>
